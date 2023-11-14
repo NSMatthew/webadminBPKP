@@ -1,0 +1,322 @@
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+font{
+    color: white;
+    font-weight: normal;
+    font-size: small;
+}
+
+font2{
+    color: #141313;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+font3{
+    color: #141313;
+    font-size: 12px;
+}
+
+font4{
+    color: grey;
+    font-size: 12px;
+}
+font5{
+    color: white;
+    font-size: 12px;
+}
+
+font6{
+    color: #141313;
+    font-size: 16px;
+    font-weight: bold;
+}
+font7{
+    color: #141313;
+    font-weight: 500;
+    font-size: 12px;
+}
+font8{
+    color: #141313;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+label1{
+    color: white;
+    font-size: 12px;
+}
+
+.box{
+    background-color: whitesmoke;
+    height: 296 px;
+    width: 48 px;
+    border-radius: 10px;
+}
+
+.foto{
+    background-color: grey;
+    height: 30 px;
+    width: 30 px;
+}
+
+.kotak1{
+    width: 400px;
+    height: 61px;
+    background-color: #10B7E2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.kotak2{
+    width: 400px;
+    height: 400px;
+    background-color: #FAFAFA;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset;
+}
+
+.kotak3{
+    width: 461px;
+    height: 367px;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    box-shadow: inset;
+}
+
+.kotak4{
+    display: inline-flex;
+    padding: 13px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form1{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: gray;
+    width: 120px;
+    background-color:rgba(0,0,0,0) !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.toggle{
+    color: blue;
+}
+
+::placeholder{
+    color: black;
+    font-size: 12px;
+    border-bottom-color: black;
+}
+
+.container-fluidCustom{
+    display: flex;
+    min-height: 100vh;
+}
+
+.container-fluid2{
+    display: flex;
+    min-height: 20vh;
+}
+
+.container-fluid3{
+    display: flex;
+    min-height:100%;
+    min-width: 100%;
+}
+
+/*SIDEBAR*/
+
+.sidebar{
+    background-color: #10B7E2;
+    width: 291px;
+    padding: 32px;
+    display: flex;
+    box-sizing: border-box; /*supaya padding tidak mempengaruhi width*/
+    flex-direction: column;
+}
+
+.sidebar .description-header{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height:normal;
+}
+
+.sidebar a{
+    text-decoration: none; /*buat ngilangin underline di "pilihan dashboard*/
+}
+
+img{
+    height: 40px;
+    width: 60px;
+}
+
+.img1{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.img2{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.img3{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.img4{
+    height: 18px;
+    width: 27px;
+}
+
+.headerCreateUser{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 300px;
+}
+
+.sidebar .header .list-item{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    flex-direction: row;
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.sidebar .header .list-item .icon{
+    margin-right: 12px;
+}
+
+.sidebar .isi{
+    align-content: center;
+    width: 20vh;
+    height: 100vh;
+}
+
+.sidebar .isi .list-item .description{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sidebar .isi .list-item .icon{
+    margin-right: 20px;
+}
+
+.vertical-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-item {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .list-item a {
+    display: flex;
+    align-items: center;
+  }
+
+  
+  /*table*/
+
+table.table{
+    border-color: #fff;
+    background-color: #fff;
+    column-gap: 2px;
+}
+
+table.table th{
+    color: #141313;
+}
+
+table.table th[scope]{
+    color: #141313;
+    background-color:#fff;
+}
+
+table.table thead th{
+    border-color: #141313;
+    background-color: #fff;
+}
+
+table.table tbody tr:hover{
+    background-color: #fff;
+}
+
+table.table tbody tr td{
+    color: #141313;
+    background-color: #fff;
+}
+
+table.table td, table.table th {
+    padding: 15px; /* Adjust the value to reduce or increase the padding */
+  }
+
+.small-table{
+    width: 80%;
+}
+
+.customRow{
+    color: #FFF;
+    background-color: gray;
+    border: 2px gray;
+}
+
+fontcustomRow{
+    color: #CBCBCB;
+
+}
+
+/*Button*/
+
+.btn{
+    color: #141313;
+}
+
+::btn btn-secondary dropdown-toggle{
+    border-color: #CBCBCB;
+    color: #10B7E2;
+}
+
+/*form input kinerja*/
+.kotakLabel{
+    display: flex;
+    background-color: #141313;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 70vh;
+    height: 10vh;
+}
+

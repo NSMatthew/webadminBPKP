@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard Kinerja</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="chart.js"></script>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"crossorigin="anonymous"/>
+  
+    <link rel="stylesheet" type="text/css" href="external.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="container-fluid"> <!--Pengawasan Pembangunan atas Akuntabilitas Keuangan Negara/Daerah-->
+        <div class="row">
+            <div class="col mx-5 my-4">
+              <div class="span">
+                <font2>Pengawasan Pembangunan atas Akuntabilitas Keuangan Negara/Daerah</font2>
+                <img src="https://drive.google.com/uc?export=view&id=1y4hJ472woLwoJGe4e1R0-zZCKMkr2k4p" alt="save" class="img3" style="margin-left: 20px; margin-right:20px;" id="save">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+                    <path d="M10.5 4.5C9.74052 4.5 9.01214 4.81607 8.4751 5.37868C7.93807 5.94129 7.63636 6.70435 7.63636 7.5C7.63636 8.29565 7.93807 9.05871 8.4751 9.62132C9.01214 10.1839 9.74052 10.5 10.5 10.5C11.2595 10.5 11.9879 10.1839 12.5249 9.62132C13.0619 9.05871 13.3636 8.29565 13.3636 7.5C13.3636 6.70435 13.0619 5.94129 12.5249 5.37868C11.9879 4.81607 11.2595 4.5 10.5 4.5ZM10.5 12.5C9.23419 12.5 8.02023 11.9732 7.12517 11.0355C6.23011 10.0979 5.72727 8.82608 5.72727 7.5C5.72727 6.17392 6.23011 4.90215 7.12517 3.96447C8.02023 3.02678 9.23419 2.5 10.5 2.5C11.7658 2.5 12.9798 3.02678 13.8748 3.96447C14.7699 4.90215 15.2727 6.17392 15.2727 7.5C15.2727 8.82608 14.7699 10.0979 13.8748 11.0355C12.9798 11.9732 11.7658 12.5 10.5 12.5ZM10.5 0C5.72727 0 1.65136 3.11 0 7.5C1.65136 11.89 5.72727 15 10.5 15C15.2727 15 19.3486 11.89 21 7.5C19.3486 3.11 15.2727 0 10.5 0Z" fill="#141313"/>
+                  </svg>
+
+              </div>
+                    
+                <div class="row"> <!--filter triwulan-->
+                    <div class="col-md-7 mt-3">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <font5>Triwulan I</font5>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#triwulan1"><font3>Triwulan I</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan2"><font3>Triwulan II</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan3"><font3>Triwulan III</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan4"><font3>Triwulan IV</font3></a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-12"> <!--Topik 1-->
+                  <div class="row mt-3"> <!--row untuk semua konten dalam 1 baris-->
+                    <div class="col-md-6"> <!--isi konten 1-->
+                      <font7>Nilai optimalisasi penerimaan daerah yang terealisasi</font7> <!--Subjudul-->
+                    <div class="col">
+                     <font7>Target <font8>(Juta)</font8></font7>
+                    <a href="#popUp1">
+                      <img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                    </a>
+                 </div>
+               <div class="row">
+                 <div class="col-md-4 mt-3">
+                     <input accept="number" class="kotak4" placeholder="Tahunan">
+                 </div>
+                 <div class="col-md-1">
+                  <!--ini spasi-->
+                </div>
+                 <div class="col-md-1 mt-3">
+                     <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                 </div>
+               </div>
+                    </div>
+                   
+                   <div class="col-md-6"> <!--isi konten 2-->
+                    <font7>Potensi penerimaan daerah yang dioptimalisasi</font7>
+                    <div class="col">
+                      <font7>Target<font8>(Juta)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                    </div>  
+                 <div class="row">
+                  <div class="col-md-4 mt-3">
+                    <input accept="number" class="kotak4" placeholder="Tahunan">
+                </div>
+                <div class="col-md-1">
+                  <!--ini spasi-->
+                </div>
+                <div class="col-md-1 mt-3">
+                    <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                </div>  
+                 </div>
+                  </div>
+                  </div>                     
+            </div>
+
+               <div class="col-md-12">
+                <div class="row mt-3">
+                  <div class="col-md-6"> <!--isi konten 3-->
+                    <font7>Nilai efisiensi pengeluaran negara dan daerah</font7>
+                   <div class="col">
+                    <font7>Target<font8>(Juta)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                
+              <div class="row">
+                <div class="col-md-4 mt-3">
+                    <input accept="number" class="kotak4" placeholder="Tahunan">
+                </div>
+                <div class="col-md-1">
+                  <!--ini spasi-->
+                </div>
+                <div class="col-md-1 mt-3">
+                    <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                </div>  
+              </div>
+            </div>
+                 </div>
+               </div>
+        </div>
+
+        <div class="row">
+            <canvas id="chartKinerja">
+              
+            </canvas>
+        </div>
+
+         <!--POP UP-->
+         <div class="col" id="popUp1" style="visibility:hidden; text-align: center;">
+         <div class="kotakLabel">
+          <font5>Pengawasan Pembangunan atas Akuntabilitas Keuangan Negara/Daerah</font5>
+         </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container-fluid"> <!--Pengawasan Pembangunan atas Pembangunan Nasional-->
+        <div class="row">
+            <div class="col mx-5 my-4">
+                <!--Modelannya kayak yg di home, bagian profil mitra-->
+                <font2>Pengawasan Pembangunan atas Pembangunan Nasional</font2>
+                <img src="https://drive.google.com/uc?export=view&id=1y4hJ472woLwoJGe4e1R0-zZCKMkr2k4p" alt="save" class="img3" style="margin-left: 20px; margin-right:20px;" id="save">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+                    <path d="M10.5 4.5C9.74052 4.5 9.01214 4.81607 8.4751 5.37868C7.93807 5.94129 7.63636 6.70435 7.63636 7.5C7.63636 8.29565 7.93807 9.05871 8.4751 9.62132C9.01214 10.1839 9.74052 10.5 10.5 10.5C11.2595 10.5 11.9879 10.1839 12.5249 9.62132C13.0619 9.05871 13.3636 8.29565 13.3636 7.5C13.3636 6.70435 13.0619 5.94129 12.5249 5.37868C11.9879 4.81607 11.2595 4.5 10.5 4.5ZM10.5 12.5C9.23419 12.5 8.02023 11.9732 7.12517 11.0355C6.23011 10.0979 5.72727 8.82608 5.72727 7.5C5.72727 6.17392 6.23011 4.90215 7.12517 3.96447C8.02023 3.02678 9.23419 2.5 10.5 2.5C11.7658 2.5 12.9798 3.02678 13.8748 3.96447C14.7699 4.90215 15.2727 6.17392 15.2727 7.5C15.2727 8.82608 14.7699 10.0979 13.8748 11.0355C12.9798 11.9732 11.7658 12.5 10.5 12.5ZM10.5 0C5.72727 0 1.65136 3.11 0 7.5C1.65136 11.89 5.72727 15 10.5 15C15.2727 15 19.3486 11.89 21 7.5C19.3486 3.11 15.2727 0 10.5 0Z" fill="#141313"/>
+                  </svg>
+                <div class="row"> <!--filter triwulan-->
+                    <div class="col-md-7 mt-3">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <font5>Triwulan I</font5>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#triwulan1"><font3>Triwulan I</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan2"><font3>Triwulan II</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan3"><font3>Triwulan III</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan4"><font3>Triwulan IV</font3></a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+              
+               <div class="col-md-12"> <!--Topik 2-->
+                <div class="row mt-3"> <!--row untuk semua konten dalam 1 baris-->
+                  <div class="col-md-6"> <!--isi konten 1-->
+                      <font7>Persentase hambatan pelaksanaan pembangunan yang diselesaikan</font7>
+                     <div class="col">
+                      <font7>Target <font8>(Persen)</font8></font7>
+                      <img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                      <input accept="number" class="kotak4" placeholder="Tahunan">
+                  </div>
+                  <div class="col-md-1">
+                    <!--ini spasi-->
+                  </div>
+                  <div class="col-md-1 mt-3">
+                      <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-6"> <!--isi konten 2-->
+                  <font7>Jumlah Kegiatan Pembangunan Prioritas Daerah yang Diawasi</font7>
+                 <div class="col"> <font7>Target<font8>(Banyak Kegiatan)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+              </div>
+            <div class="row">
+              <div class="col-md-4 mt-3">
+                  <input accept="number" class="kotak4" placeholder="Tahunan">
+              </div>
+              <div class="col-md-1">
+                <!--ini spasi-->
+              </div>
+              <div class="col-md-1 mt-3">
+                  <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+              </div>  
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+    
+    <div class="container-fluid"> <!--Kesadaran perbaikan tata kelola pemerintahan pada K/L/D/BU yang menjadi tanggung jawab Perwakilan BPKP-->
+        <div class="row">
+            <div class="col mx-5 my-4">
+                <font2>Kesadaran perbaikan tata kelola pemerintahan pada K/L/D/BU yang menjadi tanggung jawab Perwakilan BPKP</font2>
+                <img src="https://drive.google.com/uc?export=view&id=1y4hJ472woLwoJGe4e1R0-zZCKMkr2k4p" alt="save" class="img3" style="margin-left: 20px; margin-right:20px;" id="save">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+                    <path d="M10.5 4.5C9.74052 4.5 9.01214 4.81607 8.4751 5.37868C7.93807 5.94129 7.63636 6.70435 7.63636 7.5C7.63636 8.29565 7.93807 9.05871 8.4751 9.62132C9.01214 10.1839 9.74052 10.5 10.5 10.5C11.2595 10.5 11.9879 10.1839 12.5249 9.62132C13.0619 9.05871 13.3636 8.29565 13.3636 7.5C13.3636 6.70435 13.0619 5.94129 12.5249 5.37868C11.9879 4.81607 11.2595 4.5 10.5 4.5ZM10.5 12.5C9.23419 12.5 8.02023 11.9732 7.12517 11.0355C6.23011 10.0979 5.72727 8.82608 5.72727 7.5C5.72727 6.17392 6.23011 4.90215 7.12517 3.96447C8.02023 3.02678 9.23419 2.5 10.5 2.5C11.7658 2.5 12.9798 3.02678 13.8748 3.96447C14.7699 4.90215 15.2727 6.17392 15.2727 7.5C15.2727 8.82608 14.7699 10.0979 13.8748 11.0355C12.9798 11.9732 11.7658 12.5 10.5 12.5ZM10.5 0C5.72727 0 1.65136 3.11 0 7.5C1.65136 11.89 5.72727 15 10.5 15C15.2727 15 19.3486 11.89 21 7.5C19.3486 3.11 15.2727 0 10.5 0Z" fill="#141313"/>
+                  </svg>
+                <div class="row"> <!--filter triwulan-->
+                    <div class="col-md-7 mt-3">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <font5>Triwulan I</font5>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#triwulan1"><font3>Triwulan I</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan2"><font3>Triwulan II</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan3"><font3>Triwulan III</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan4"><font3>Triwulan IV</font3></a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+              
+              
+                <div class="col-md-12"> <!--Topik 3-->
+                  <div class="row mt-3"> <!--row untuk semua konten dalam 1 baris-->
+                    <div class="col-md-6"> <!--isi konten 1-->
+                      <font7>Persentase rekomendasi strategis yang ditindak lanjuti</font7> <!--Subjudul-->
+                    <div class="col">
+                     <font7>Target <font8>(Persen)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                 </div>
+               <div class="row">
+                 <div class="col-md-4 mt-3">
+                     <input accept="number" class="kotak4" placeholder="Tahunan">
+                 </div>
+                 <div class="col-md-1">
+                  <!--ini spasi-->
+                </div>
+                 <div class="col-md-1 mt-3">
+                     <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                 </div>
+               </div>
+                    </div>
+                  </div>                      
+                 </div>
+           
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid"> <!--Pengawasan Pembangunan atas Badan Usaha-->
+        <div class="row">
+            <div class="col mx-5 my-4">
+                <font2>Pengawasan Pembangunan atas Badan Usaha</font2>
+                <img src="https://drive.google.com/uc?export=view&id=1y4hJ472woLwoJGe4e1R0-zZCKMkr2k4p" alt="save" class="img3" style="margin-left: 20px; margin-right:20px;" id="save">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+                    <path d="M10.5 4.5C9.74052 4.5 9.01214 4.81607 8.4751 5.37868C7.93807 5.94129 7.63636 6.70435 7.63636 7.5C7.63636 8.29565 7.93807 9.05871 8.4751 9.62132C9.01214 10.1839 9.74052 10.5 10.5 10.5C11.2595 10.5 11.9879 10.1839 12.5249 9.62132C13.0619 9.05871 13.3636 8.29565 13.3636 7.5C13.3636 6.70435 13.0619 5.94129 12.5249 5.37868C11.9879 4.81607 11.2595 4.5 10.5 4.5ZM10.5 12.5C9.23419 12.5 8.02023 11.9732 7.12517 11.0355C6.23011 10.0979 5.72727 8.82608 5.72727 7.5C5.72727 6.17392 6.23011 4.90215 7.12517 3.96447C8.02023 3.02678 9.23419 2.5 10.5 2.5C11.7658 2.5 12.9798 3.02678 13.8748 3.96447C14.7699 4.90215 15.2727 6.17392 15.2727 7.5C15.2727 8.82608 14.7699 10.0979 13.8748 11.0355C12.9798 11.9732 11.7658 12.5 10.5 12.5ZM10.5 0C5.72727 0 1.65136 3.11 0 7.5C1.65136 11.89 5.72727 15 10.5 15C15.2727 15 19.3486 11.89 21 7.5C19.3486 3.11 15.2727 0 10.5 0Z" fill="#141313"/>
+                  </svg>
+                <div class="row"> <!--filter triwulan-->
+                    <div class="col-md-7 mt-3">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <font5>Triwulan I</font5>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#triwulan1"><font3>Triwulan I</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan2"><font3>Triwulan II</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan3"><font3>Triwulan III</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan4"><font3>Triwulan IV</font3></a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+              
+             <div class="col-md-12">
+              <div class="row mt-3"> 
+                <div class="col-md-6">
+                    <font7>Jumlah BUMD dengan pengelolaan korporasinya baik</font7>
+                   <div class="col">
+                    <font7>Target <font8>(Unit)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                
+              <div class="row">
+                <div class="col-md-4 mt-3">
+                    <input accept="number" class="kotak4" placeholder="Tahunan">
+                </div>
+                <div class="col-md-1">
+                  <!--ini spasi-->
+                </div>
+                <div class="col-md-1 mt-3">
+                    <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-6">
+                <font7>Jumlah BUMD dengan kinerja sehat</font7>
+               <div class="col"> <font7>Target <font8>(Unit)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+            </div>
+            
+          <div class="row">
+            <div class="col-md-4 mt-3">
+                <input accept="number" class="kotak4" placeholder="Tahunan">
+            </div>
+            <div class="col-md-1">
+              <!--ini spasi-->
+            </div>
+            <div class="col-md-1 mt-3">
+                <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+            </div>
+          </div>
+          </div>
+            </div>
+             </div>
+                
+                <div class="col-md-12">
+                  <div class="row mt-3"> 
+                    <div class="col-md-6">
+                        <font7>Jumlah BLUD dengan kinerja sehat</font7>
+                       <div class="col"> <font7>Target <font8>(Unit)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                    </div>
+                    
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+                    <font7>Jumlah BUMDes yang mampu menyusun laporan</font7>
+                   <div class="col"> <font7>Target <font8>(Unit)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                
+              <div class="row">
+                <div class="col-md-4 mt-3">
+                    <input accept="number" class="kotak4" placeholder="Tahunan">
+                </div>
+                <div class="col-md-1">
+                  <!--ini spasi-->
+                </div>
+                <div class="col-md-1 mt-3">
+                    <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                </div>
+              </div>
+              </div>
+                </div>
+                </div>
+                
+               <div class="col-md-12">
+                <div class="row mt-3"> 
+                  <div class="col-md-6">
+                      <font7>Jumlah BUMDes yang memberikan kontribusi pada perekonomian desa</font7>
+                     <div class="col"> <font7>Target <font8>(Unit)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                      <input accept="number" class="kotak4" placeholder="Tahunan">
+                  </div>
+                  <div class="col-md-1">
+                    <!--ini spasi-->
+                  </div>
+                  <div class="col-md-1 mt-3">
+                      <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                  </div>
+                </div>
+                </div>
+              </div>
+               </div>
+           
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid"> <!--Pengawasan Pembangunan atas Efektivitas Pengendalian Korupsi-->
+        <div class="row">
+            <div class="col mx-5 my-4">
+                <font2>Pengawasan Pembangunan atas Efektivitas Pengendalian Korupsi</font2>
+                <img src="https://drive.google.com/uc?export=view&id=1y4hJ472woLwoJGe4e1R0-zZCKMkr2k4p" alt="save" class="img3" style="margin-left: 20px; margin-right:20px;" id="save">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+                    <path d="M10.5 4.5C9.74052 4.5 9.01214 4.81607 8.4751 5.37868C7.93807 5.94129 7.63636 6.70435 7.63636 7.5C7.63636 8.29565 7.93807 9.05871 8.4751 9.62132C9.01214 10.1839 9.74052 10.5 10.5 10.5C11.2595 10.5 11.9879 10.1839 12.5249 9.62132C13.0619 9.05871 13.3636 8.29565 13.3636 7.5C13.3636 6.70435 13.0619 5.94129 12.5249 5.37868C11.9879 4.81607 11.2595 4.5 10.5 4.5ZM10.5 12.5C9.23419 12.5 8.02023 11.9732 7.12517 11.0355C6.23011 10.0979 5.72727 8.82608 5.72727 7.5C5.72727 6.17392 6.23011 4.90215 7.12517 3.96447C8.02023 3.02678 9.23419 2.5 10.5 2.5C11.7658 2.5 12.9798 3.02678 13.8748 3.96447C14.7699 4.90215 15.2727 6.17392 15.2727 7.5C15.2727 8.82608 14.7699 10.0979 13.8748 11.0355C12.9798 11.9732 11.7658 12.5 10.5 12.5ZM10.5 0C5.72727 0 1.65136 3.11 0 7.5C1.65136 11.89 5.72727 15 10.5 15C15.2727 15 19.3486 11.89 21 7.5C19.3486 3.11 15.2727 0 10.5 0Z" fill="#141313"/>
+                  </svg>
+                <div class="row"> <!--filter triwulan-->
+                    <div class="col-md-7 mt-3">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <font5>Triwulan I</font5>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#triwulan1"><font3>Triwulan I</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan2"><font3>Triwulan II</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan3"><font3>Triwulan III</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan4"><font3>Triwulan IV</font3></a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-12">
+                  <div class="row mt-3"> 
+                    <div class="col-md-6">
+                        <font7>Hasil pengawasan represif yang dimanfaatkan/ditindaklanjuti</font7>
+                       <div class="col"> <font7>Target <font8>(Persen)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                    </div>
+                    
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <font7>Hasil Pengawasan preventif dan edukatif yang dimanfaatkan/ ditindaklanjuti</font7>
+                   <div class="col"> <font7>Target <font8>(Persen)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                
+              <div class="row">
+                <div class="col-md-4 mt-3">
+                    <input accept="number" class="kotak4" placeholder="Tahunan">
+                </div>
+                <div class="col-md-1">
+                  <!--ini spasi-->
+                </div>
+                <div class="col-md-1 mt-3">
+                    <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                </div>
+              </div>
+              </div>
+                </div>      
+           </div>
+                
+                <div class="col-md-12">
+                  <div class="row mt-3"> 
+                    <div class="col-md-6">
+                        <font7>Jumlah Pemda dengan efektivitas pengendalian korupsi baik</font7>
+                       <div class="col"> <font7>Target <font8>(Banyak Pemda)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                    </div>
+                    
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+                    <font7>Jumlah Badan Usaha dengan efektivitas pengendalian korupsi baik</font7>
+                   <div class="col"> <font7>Target <font8>(Banyak Badan Usaha)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                
+              <div class="row">
+                <div class="col-md-4 mt-3">
+                    <input accept="number" class="kotak4" placeholder="Tahunan">
+                </div>
+                <div class="col-md-1">
+                  <!--ini spasi-->
+                </div>
+                <div class="col-md-1 mt-3">
+                    <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                </div>
+              </div>
+              </div>
+                </div>
+                </div>
+                
+               
+           
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid"> <!--Pengawasan Pembangunan atas Kualitas Pengendalian Intern K/L/P/BU-->
+        <div class="row">
+            <div class="col mx-5 my-4">
+                <font2>Pengawasan Pembangunan atas Kualitas Pengendalian Intern K/L/P/BU</font2>
+                <img src="https://drive.google.com/uc?export=view&id=1y4hJ472woLwoJGe4e1R0-zZCKMkr2k4p" alt="save" class="img3" style="margin-left: 20px; margin-right:20px;" id="save">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+                    <path d="M10.5 4.5C9.74052 4.5 9.01214 4.81607 8.4751 5.37868C7.93807 5.94129 7.63636 6.70435 7.63636 7.5C7.63636 8.29565 7.93807 9.05871 8.4751 9.62132C9.01214 10.1839 9.74052 10.5 10.5 10.5C11.2595 10.5 11.9879 10.1839 12.5249 9.62132C13.0619 9.05871 13.3636 8.29565 13.3636 7.5C13.3636 6.70435 13.0619 5.94129 12.5249 5.37868C11.9879 4.81607 11.2595 4.5 10.5 4.5ZM10.5 12.5C9.23419 12.5 8.02023 11.9732 7.12517 11.0355C6.23011 10.0979 5.72727 8.82608 5.72727 7.5C5.72727 6.17392 6.23011 4.90215 7.12517 3.96447C8.02023 3.02678 9.23419 2.5 10.5 2.5C11.7658 2.5 12.9798 3.02678 13.8748 3.96447C14.7699 4.90215 15.2727 6.17392 15.2727 7.5C15.2727 8.82608 14.7699 10.0979 13.8748 11.0355C12.9798 11.9732 11.7658 12.5 10.5 12.5ZM10.5 0C5.72727 0 1.65136 3.11 0 7.5C1.65136 11.89 5.72727 15 10.5 15C15.2727 15 19.3486 11.89 21 7.5C19.3486 3.11 15.2727 0 10.5 0Z" fill="#141313"/>
+                  </svg>
+                <div class="row"> <!--filter triwulan-->
+                    <div class="col-md-7 mt-3">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <font5>Triwulan I</font5>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#triwulan1"><font3>Triwulan I</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan2"><font3>Triwulan II</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan3"><font3>Triwulan III</font3></a></li>
+                              <li><a class="dropdown-item" href="#triwulan4"><font3>Triwulan IV</font3></a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-12">
+                  <div class="row mt-3">
+                    <div class="col-md-6"> <!--konten 1-->
+                      <font7>Jumlah APIP Provinsi dengan Kapabilitas APIP >= Level 3</font7>
+                     <div class="col">
+                      <font7>Target <font8>(Jumlah Provinsi)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6"> <!--konten 2-->
+                    <font7>Jumlah APIP Kabupaten/Kota dengan Kapabilitas APIP >= Level 3</font7>
+                   <div class="col"> <font7>Target <font8>(Jumlah Kab/Kota)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+              <div class="row">
+                <div class="col-md-4 mt-3">
+                    <input accept="number" class="kotak4" placeholder="Tahunan">
+                </div>
+                <div class="col-md-1">
+                  <!--ini spasi-->
+                </div>
+                <div class="col-md-1 mt-3">
+                    <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                </div>
+              </div>
+            </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="row mt-3">
+                    <div class="col-md-6"> <!--konten 3-->
+                      <font7>Jumlah Provinsi dengan Maturitas SPIP >= Level 3</font7>
+                     <div class="col"> <font7>Target <font8>(Jumlah Provinsi)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6"> <!--konten 4-->
+                    <font7>Jumlah Kabupaten/Kota dengan Maturitas SPIP >= Level 3</font7>
+                   <div class="col">
+                    <font7>Target <font8>(Jumlah Kab/Kota)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                      <input accept="number" class="kotak4" placeholder="Tahunan">
+                  </div>
+                  <div class="col-md-1">
+                    <!--ini spasi-->
+                  </div>
+                  <div class="col-md-1 mt-3">
+                      <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                  </div>
+                </div>
+                </div>
+                  </div>
+                </div>
+          
+               <div class="col-md-12">
+                <div class="row mt-3">
+                  <div class="col-md-6"> <!--konten 5-->
+                    <font7>Jumlah Provinsi dengan MRI >= Level 3</font7>
+                   <div class="col">
+                    <font7>Target <font8>(Jumlah Provinsi)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                      <input accept="number" class="kotak4" placeholder="Tahunan">
+                  </div>
+                  <div class="col-md-1">
+                    <!--ini spasi-->
+                  </div>
+                  <div class="col-md-1 mt-3">
+                      <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-6"> <!--konten 6-->
+                  <font7>Jumlah Kab/Kota dengan MRI >= Level 3</font7>
+                 <div class="col">
+                  <font7>Target <font8>(Jumlah Kab/Kota)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+              </div>
+              <div class="row">
+                <div class="col-md-4 mt-3">
+                    <input accept="number" class="kotak4" placeholder="Tahunan">
+                </div>
+                <div class="col-md-1">
+                  <!--ini spasi-->
+                </div>
+                <div class="col-md-1 mt-3">
+                    <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                </div>
+              </div>
+              </div>
+                </div>
+               </div>
+
+                <div class="col-md-12">
+                  <div class="row mt-3">
+                    <div class="col-md-6"> <!--konten 7-->
+                      <font7>Pemda yang akuntabel dalam pengelolaan keuangan dan kinerja daerah</font7>
+                     <div class="col">
+                      <font7>Target <font8>(Jumlah Pemda)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6"> <!--konten 8-->
+                    <font7>Jumlah Desa yang pengelolaan keuangannya akuntabel</font7>
+                   <div class="col">
+                    <font7>Target <font8>(Jumlah Desa)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                      <input accept="number" class="kotak4" placeholder="Tahunan">
+                  </div>
+                  <div class="col-md-1">
+                    <!--ini spasi-->
+                  </div>
+                  <div class="col-md-1 mt-3">
+                      <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                  </div>
+                </div>
+                </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="row mt-3">
+                    <div class="col-md-6"> <!--konten 9-->
+                      <font7>Jumlah desa yang menerapkan pengelolaan aset desa secara memadai</font7>
+                     <div class="col">
+                      <font7>Target <font8>(Jumlah Desa)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6"> <!--konten 10-->
+                    <font7>Jumlah BUMD dengan MRI >= Level 3</font7>
+                   <div class="col">
+                    <font7>Target <font8>(Jumlah BUMD)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                      <input accept="number" class="kotak4" placeholder="Tahunan">
+                  </div>
+                  <div class="col-md-1">
+                    <!--ini spasi-->
+                  </div>
+                  <div class="col-md-1 mt-3">
+                      <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                  </div>
+                </div>
+                </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="row mt-3">
+                    <div class="col-md-6"> <!--konten 11-->
+                      <font7>Jumlah BLUD dengan MRI >= Level 3</font7>
+                     <div class="col">
+                      <font7>Target <font8>(Jumlah BLUD)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6"> <!--konten 12-->
+                    <font7>Jumlah BUMD dengan Kapabilitas SPI >= Level 3</font7>
+                   <div class="col">
+                    <font7>Target <font8>(Jumlah BUMD)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                      <input accept="number" class="kotak4" placeholder="Tahunan">
+                  </div>
+                  <div class="col-md-1">
+                    <!--ini spasi-->
+                  </div>
+                  <div class="col-md-1 mt-3">
+                      <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                  </div>
+                </div>
+                </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="row mt-3">
+                    <div class="col-md-6"> <!--konten 13-->
+                      <font7>Jumlah BLUD dengan Kapabilitas SPI >= Level 3</font7>
+                     <div class="col">
+                      <font7>Target <font8>(Jumlah BLUD)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+    <div class="container-fluid"> <!--Tata Kelola Unit Perwakilan-->
+      <div class="row">
+          <div class="col mx-5 my-4">
+              <font2>Tata Kelola Unit Perwakilan</font2>
+              <img src="https://drive.google.com/uc?export=view&id=1y4hJ472woLwoJGe4e1R0-zZCKMkr2k4p" alt="save" class="img3" style="margin-left: 20px; margin-right:20px;" id="save">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+                  <path d="M10.5 4.5C9.74052 4.5 9.01214 4.81607 8.4751 5.37868C7.93807 5.94129 7.63636 6.70435 7.63636 7.5C7.63636 8.29565 7.93807 9.05871 8.4751 9.62132C9.01214 10.1839 9.74052 10.5 10.5 10.5C11.2595 10.5 11.9879 10.1839 12.5249 9.62132C13.0619 9.05871 13.3636 8.29565 13.3636 7.5C13.3636 6.70435 13.0619 5.94129 12.5249 5.37868C11.9879 4.81607 11.2595 4.5 10.5 4.5ZM10.5 12.5C9.23419 12.5 8.02023 11.9732 7.12517 11.0355C6.23011 10.0979 5.72727 8.82608 5.72727 7.5C5.72727 6.17392 6.23011 4.90215 7.12517 3.96447C8.02023 3.02678 9.23419 2.5 10.5 2.5C11.7658 2.5 12.9798 3.02678 13.8748 3.96447C14.7699 4.90215 15.2727 6.17392 15.2727 7.5C15.2727 8.82608 14.7699 10.0979 13.8748 11.0355C12.9798 11.9732 11.7658 12.5 10.5 12.5ZM10.5 0C5.72727 0 1.65136 3.11 0 7.5C1.65136 11.89 5.72727 15 10.5 15C15.2727 15 19.3486 11.89 21 7.5C19.3486 3.11 15.2727 0 10.5 0Z" fill="#141313"/>
+                </svg>
+              <div class="row"> <!--filter triwulan-->
+                  <div class="col-md-7 mt-3">
+                      <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <font5>Triwulan I</font5>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#triwulan1"><font3>Triwulan I</font3></a></li>
+                            <li><a class="dropdown-item" href="#triwulan2"><font3>Triwulan II</font3></a></li>
+                            <li><a class="dropdown-item" href="#triwulan3"><font3>Triwulan III</font3></a></li>
+                            <li><a class="dropdown-item" href="#triwulan4"><font3>Triwulan IV</font3></a></li>
+                          </ul>
+                        </div>
+                  </div>
+              </div>
+            
+                  <div class="col-md-12">
+                    <div class="row mt-3">
+                      <div class="col-md-6"> <!--konten 1-->
+                        <font7>Nilai Skor Zona Integritas Unit Kerja</font7>
+                       <div class="col">
+                        <font7>Target <font8>(Skor Maks 100)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 mt-3">
+                          <input accept="number" class="kotak4" placeholder="Tahunan">
+                      </div>
+                      <div class="col-md-1">
+                        <!--ini spasi-->
+                      </div>
+                      <div class="col-md-1 mt-3">
+                          <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-md-6"> <!--konten 2-->
+                      <font7>Nilai SAKIP Unit Kerja</font7>
+                     <div class="col"> <font7>Target <font8>(Skor Maks 100)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                      <input accept="number" class="kotak4" placeholder="Tahunan">
+                  </div>
+                  <div class="col-md-1">
+                    <!--ini spasi-->
+                  </div>
+                  <div class="col-md-1 mt-3">
+                      <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                  </div>
+                </div>
+              </div>
+                    </div>
+                  </div>
+
+
+                <div class="col-md-12">
+                  <div class="row mt-3">
+                    <div class="col-md-6"> <!--konten 3-->
+                      <font7>Efektivitas Pengendalian Intern Unit Kerja (SPIP Unit Kerja)</font7>
+                     <div class="col"> <font7>Target <font8>(Persen)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6"> <!--konten 4-->
+                    <font7>Penyelesaian RTP (MRI Unit Kerja)</font7>
+                   <div class="col">
+                    <font7>Target <font8>(Persen)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                      <input accept="number" class="kotak4" placeholder="Tahunan">
+                  </div>
+                  <div class="col-md-1">
+                    <!--ini spasi-->
+                  </div>
+                  <div class="col-md-1 mt-3">
+                      <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                  </div>
+                </div>
+                </div>
+                  </div>
+                </div>
+     
+                <div class="col-md-12">
+                  <div class="row mt-3">
+                    <div class="col-md-6"> <!--konten 5-->
+                      <font7>Indeks Kualitas Layanan Eksternal Unit Kerja</font7>
+                     <div class="col">
+                      <font7>Target <font8>(Index Skala 100)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6"> <!--konten 6-->
+                    <font7>Skor IKPA Unit Kerja</font7>
+                   <div class="col">
+                    <font7>Target <font8>(Index Skala 100)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mt-3">
+                      <input accept="number" class="kotak4" placeholder="Tahunan">
+                  </div>
+                  <div class="col-md-1">
+                    <!--ini spasi-->
+                  </div>
+                  <div class="col-md-1 mt-3">
+                      <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                  </div>
+                </div>
+                </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="row mt-3">
+                    <div class="col-md-6"> <!--konten 7-->
+                      <font7>Nilai Pengelolaan BMN Unit Kerja</font7>
+                     <div class="col">
+                      <font7>Target <font8>(Index Skala 100)</font8></font7><img src="https://drive.google.com/uc?export=view&id=1Y1h-thAG12_up16JvHjRxIczQ9BkkpI5" alt="edit" class="img3" style="margin-left: 20px;">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <input accept="number" class="kotak4" placeholder="Tahunan">
+                    </div>
+                    <div class="col-md-1">
+                      <!--ini spasi-->
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <input accept="number" class="kotak4" placeholder="s/d Triwulan II">
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+  </div>
+
+<!--SCRIPT-->
+
+<script>
+  //const data di taruh di atas config supaya var "data" bisa dikenali di config
+ // Memasukkan semuanya ke dalam function
+function createDoughnutChart() {
+  let datachart = {
+    labels: ['Triwulan', 'Tahun'],
+    datasets: [{
+      label: ['Capaian'],
+      backgroundColor: ['rgb(145, 255, 170)', 'rgb(171, 215, 235)'],
+      data: [20, 100],
+      hoverOffset: 4
+    }]
+  };
+
+  const config = {
+    type: 'doughnut',
+    data: datachart,
+    options: {
+      aspectRatio: 8.7, //mengatur ukuran doughnut
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    },
+  };
+
+  const chartdonat = new Chart(
+    document.getElementById("chartKinerja"), config
+  );
+}
+
+// Menggunakan event listener untuk DOMContentLoaded event
+document.addEventListener("DOMContentLoaded", createDoughnutChart);
+
+</script>
+
+</body>
+</html>
