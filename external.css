@@ -316,7 +316,9 @@ fontcustomRow{
     background-color: #141313;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-    width: 70vh;
+    width: 80vh;
     height: 10vh;
+    justify-content: center;
+    align-items: center;
 }
 
