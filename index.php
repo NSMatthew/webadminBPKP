@@ -95,15 +95,43 @@ $result = mysqli_query(mysqli, "SELECT * FROM user_admin ORDER BY id ASC")
   
   <?php
     while($user_admin = mysqli_fetch_data($result)){
+      $conn = new mysqli('localhost','root','','user_admin'); 
       if (isset($_POST['Submit'])){
 
         $inputan = $conn->prepare(
-
+          "INSERT INTO user_admin(
+            nama,
+            id,
+            email,
+            statusUser
+          ) VALUES(?,?,?,?)"
 
         );
 
+        $nama = $_POST['nama'];
+        $id = $_POST['id'];
+        $email = $_POST['email'];
+        $status = $_POST['statusUser'];
+
+        $sql->bind_param("ssssssss", $nama, $gender, $email, $ttl, $alamat,$agama,$hobi,$hp);
+
+        if($sql->execute()){
+          Header('Location: index.php');
+         }else{
+          echo "Error";
+         }
+         
+         $sql->close();
+         $conn->close();
       }
     }
     ?>
+
+    <!--php untuk memasukkannya ke db-->
+
+    <?php
+
+    ?>
+
 </body>
 </html>
