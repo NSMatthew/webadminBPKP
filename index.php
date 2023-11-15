@@ -86,8 +86,24 @@ $result = mysqli_query(mysqli, "SELECT * FROM user_admin ORDER BY id ASC")
 
     <div class="container-fluid">
         <div class="col-md-4 mx-5 my-3">
-            <button class="btn btn-primary" type="submit"><font5>Tambah</font5></button>
+        <a href="add.php">
+          <button class="btn btn-primary" type="submit"><font5>Tambah</font5></button>
+    </a>
         </div>
     </div>
+  
+  
+  <?php
+    while($user_admin = mysqli_fetch_data($result)){
+      if (isset($_POST['Submit'])){
+
+        $inputan = $conn->prepare(
+
+
+        );
+
+      }
+    }
+    ?>
 </body>
 </html>
