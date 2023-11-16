@@ -118,14 +118,14 @@
                </div>
         </div>
 
-        <div class="row">
-            <canvas id="chartKinerja">
-              
-            </canvas>
-        </div>
+        <div class="container-fluid">
+          <canvas id="chartPengawasan1">
+            
+          </canvas>
+      </div>
 
          <!--POP UP-->
-         <div class="col" id="popUp1" style="visibility: hidden; text-align: center;">
+         <div class="col" id="popUp1" style="text-align: center;">
            <!-- Vertically centered scrollable modal -->
            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-dialog">
@@ -223,6 +223,11 @@
           </div>
         </div>
       </div>
+      <div class="container-fluid">
+        <canvas id="chartPengawasan2">
+          
+        </canvas>
+    </div>
   </div>
 </div>
     
@@ -273,6 +278,11 @@
                   </div>                      
                  </div>
            
+            </div>
+            <div class="container-fluid">
+              <canvas id="chartPengawasan3">
+
+              </canvas>
             </div>
         </div>
     </div>
@@ -404,6 +414,9 @@
                </div>
            
             </div>
+            <canvas id="chartPengawasan4">
+
+            </canvas>
         </div>
     </div>
 
@@ -513,6 +526,9 @@
                
            
             </div>
+            <canvas id="chartPengawasan5">
+
+            </canvas>
         </div>
     </div>
 
@@ -796,6 +812,9 @@
                 </div>
 
             </div>
+            <canvas id="chartPengawasan6">
+
+            </canvas>
         </div>
     </div>
    
@@ -961,6 +980,9 @@
                   </div>
                 </div>
           </div>
+          <canvas id="chartPengawasan7">
+
+          </canvas>
       </div>
   </div>
 
@@ -969,7 +991,9 @@
 <script>
   //const data di taruh di atas config supaya var "data" bisa dikenali di config
  // Memasukkan semuanya ke dalam function
-function createDoughnutChart() {
+
+function createDoughnutChart1() //1st Chart
+{ 
   let datachart = {
     labels: ['Triwulan(dalam persen (%))', 'Tahun(dalam persen (%))'],
     datasets: [{
@@ -995,12 +1019,201 @@ function createDoughnutChart() {
   };
 
   const chartdonat = new Chart(
-    document.getElementById("chartKinerja"), config
+    document.getElementById("chartPengawasan1"), config
   );
 }
 
 // Menggunakan event listener untuk DOMContentLoaded event
-document.addEventListener("DOMContentLoaded", createDoughnutChart);
+document.addEventListener("DOMContentLoaded", createDoughnutChart1);
+
+
+function createDoughnutChart2() //2nd Chart
+{
+  let datachart = {
+    labels: ['Triwulan(dalam persen (%))', 'Tahun(dalam persen (%))'],
+    datasets: [{
+      label: ['Capaian'],
+      backgroundColor: ['rgb(145, 255, 170)', 'rgb(171, 215, 235)'],
+      data: [20, 100],
+      hoverOffset: 4
+    }]
+  };
+
+  const config2 = {
+    type: 'doughnut',
+    data: datachart,
+    options: {
+      aspectRatio: 8.7, //mengatur ukuran doughnut
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    },
+  };
+  const chartdonat = new Chart(
+    document.getElementById("chartPengawasan2"), config2
+  );
+}
+  document.addEventListener("DOMContentLoaded", createDoughnutChart2);
+
+  function createDoughnutChart3() //3rd Chart
+{
+  let datachart = {
+    labels: ['Triwulan(dalam persen (%))', 'Tahun(dalam persen (%))'],
+    datasets: [{
+      label: ['Capaian'],
+      backgroundColor: ['rgb(145, 255, 170)', 'rgb(171, 215, 235)'],
+      data: [20, 100],
+      hoverOffset: 4
+    }]
+  };
+
+  const config3 = {
+    type: 'doughnut',
+    data: datachart,
+    options: {
+      aspectRatio: 8.7, //mengatur ukuran doughnut
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    },
+  };
+  const chartdonat = new Chart(
+    document.getElementById("chartPengawasan3"), config3
+  );
+}
+  document.addEventListener("DOMContentLoaded", createDoughnutChart3);
+
+
+  function createDoughnutChart4() //4th Chart
+{
+  let datachart = {
+    labels: ['Triwulan(dalam persen (%))', 'Tahun(dalam persen (%))'],
+    datasets: [{
+      label: ['Capaian'],
+      backgroundColor: ['rgb(145, 255, 170)', 'rgb(171, 215, 235)'],
+      data: [20, 100],
+      hoverOffset: 4
+    }]
+  };
+
+  const config4 = {
+    type: 'doughnut',
+    data: datachart,
+    options: {
+      aspectRatio: 8.7, //mengatur ukuran doughnut
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    },
+  };
+  const chartdonat = new Chart(
+    document.getElementById("chartPengawasan4"), config4
+  );
+}
+  document.addEventListener("DOMContentLoaded", createDoughnutChart4);
+
+  function createDoughnutChart5() //5th Chart
+{
+  let datachart = {
+    labels: ['Triwulan(dalam persen (%))', 'Tahun(dalam persen (%))'],
+    datasets: [{
+      label: ['Capaian'],
+      backgroundColor: ['rgb(145, 255, 170)', 'rgb(171, 215, 235)'],
+      data: [20, 100],
+      hoverOffset: 4
+    }]
+  };
+
+  const config5 = {
+    type: 'doughnut',
+    data: datachart,
+    options: {
+      aspectRatio: 8.7, //mengatur ukuran doughnut
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    },
+  };
+  const chartdonat = new Chart(
+    document.getElementById("chartPengawasan5"), config5
+  );
+}
+  document.addEventListener("DOMContentLoaded", createDoughnutChart5);
+
+  function createDoughnutChart6() //6th Chart
+{
+  let datachart = {
+    labels: ['Triwulan(dalam persen (%))', 'Tahun(dalam persen (%))'],
+    datasets: [{
+      label: ['Capaian'],
+      backgroundColor: ['rgb(145, 255, 170)', 'rgb(171, 215, 235)'],
+      data: [20, 100],
+      hoverOffset: 4
+    }]
+  };
+
+  const config6 = {
+    type: 'doughnut',
+    data: datachart,
+    options: {
+      aspectRatio: 8.7, //mengatur ukuran doughnut
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    },
+  };
+  const chartdonat = new Chart(
+    document.getElementById("chartPengawasan6"), config6
+  );
+}
+  document.addEventListener("DOMContentLoaded", createDoughnutChart6);
+
+  function createDoughnutChart7() //7th Chart
+{
+  let datachart = {
+    labels: ['Triwulan(dalam persen (%))', 'Tahun(dalam persen (%))'],
+    datasets: [{
+      label: ['Capaian'],
+      backgroundColor: ['rgb(145, 255, 170)', 'rgb(171, 215, 235)'],
+      data: [20, 100],
+      hoverOffset: 4
+    }]
+  };
+
+  const config7 = {
+    type: 'doughnut',
+    data: datachart,
+    options: {
+      aspectRatio: 8.7, //mengatur ukuran doughnut
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    },
+  };
+  const chartdonat = new Chart(
+    document.getElementById("chartPengawasan7"), config7
+  );
+}
+  document.addEventListener("DOMContentLoaded", createDoughnutChart7);
+
 
 </script>
 
