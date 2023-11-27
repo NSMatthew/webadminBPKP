@@ -296,7 +296,6 @@ table.table td, table.table th {
 
 fontcustomRow{
     color: #CBCBCB;
-
 }
 
 /*Button*/
@@ -310,7 +309,7 @@ fontcustomRow{
     color: #10B7E2;
 }
 
-/*form input kinerja*/
+/*form input hasil pengawasan*/
 .kotakLabel{
     display: flex;
     background-color: #141313;
@@ -322,8 +321,46 @@ fontcustomRow{
     align-items: center;
 }
 
-/*POP UP*/
+/*POP UP / MODAL*/
 
-.modal{
-    visibility: hidden;
+.forminputCustom{
+    padding: 2em;
+    max-width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 10px 10px 10px rgba(192,192,192,0.5);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+    .forminputCustom{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.form-controlCustom:focus{
+    box-shadow: inset 1px 4px 0 #7e7e7e;
+}
+
+.form-controlCustom{
+    display: flex;
+    background-color: inherit;
+    color: #fff;
+    padding-left: 0px;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+}
+
+.forminputCustom .btn{
+    width: 100%;
+    font-weight: 700;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 0.5em 0;
+}
+
+input::placeholder{
+    color: grey;
 }
