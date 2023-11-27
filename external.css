@@ -364,3 +364,14 @@ fontcustomRow{
 input::placeholder{
     color: grey;
 }
+
+.btn-primary {
+    background-color: #141313; /* Warna latar belakang */
+    border-color: #141313; /* Warna border */
+    color: #ffffff; /* Warna teks */
+  }
+
+  .btn-secondary{
+    background-color: #FFF;
+    border-color: #141313;
+  }
