@@ -72,7 +72,7 @@ label1{
 .kotak1{
     width: 400px;
     height: 61px;
-    background-color: #10B7E2;
+    background-color: #192841;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -117,7 +117,7 @@ html{
 
 
 .toggle{
-    color: blue;
+    color: #192841;
 }
 
 ::placeholder{
@@ -145,7 +145,7 @@ html{
 /*SIDEBAR*/
 
 .sidebar{
-    background-color: #10B7E2;
+    background-color: #192841;
     width: 291px;
     padding: 32px;
     display: flex;
@@ -192,6 +192,12 @@ img{
 .img4{
     height: 18px;
     width: 27px;
+}
+
+.img5{
+    height: 30px;
+    width: 60px;
+    margin-right: 7px;
 }
 
 .headerCreateUser{
