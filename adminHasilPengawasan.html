@@ -1288,6 +1288,18 @@
       </div>
   </div>
 
+<!--BAR CHART-->
+  <div class="container-fluid">
+    <div class="row">
+      <font3>BARCHART</font3>
+      <div class="col">
+        <canvas id="BarChart1">
+
+        </canvas>
+      </div>
+    </div>
+  </div>
+
 <!--SCRIPT-->
 
 <script>
@@ -1516,6 +1528,37 @@ function createDoughnutChart2() //2nd Chart
 }
   document.addEventListener("DOMContentLoaded", createDoughnutChart7);
 
+
+  function createBarChart1() //Bar Chart 1
+{
+  let datachart = {
+    labels: ['Triwulan(dalam persen (%))', 'Tahun(dalam persen (%))'],
+    datasets: [{
+      label: ['Capaian'],
+      backgroundColor: ['rgb(25, 40, 65)', 'rgb(82, 138, 174)'],
+      data: [20, 100],
+      hoverOffset: 4
+    }]
+  };
+
+  const configBar = {
+    type: 'bar',
+    data: datachart,
+    options: {
+      aspectRatio: 8.7, //mengatur ukuran bar chart
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    },
+  };
+  const chartdonat = new Chart(
+    document.getElementById("BarChart1"), configBar
+  );
+}
+  document.addEventListener("DOMContentLoaded", createBarChart1);
 
 </script>
 
