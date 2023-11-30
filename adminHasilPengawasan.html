@@ -1231,7 +1231,7 @@
                   </div>
                 </div>
           </div>
-          <canvas id="chartPengawasan7">
+          <canvas id="chartPengawasan7" style="margin: 12px;">
 
           </canvas>
         
@@ -1292,8 +1292,16 @@
   <div class="container-fluid mt-5">
     <div class="row">
       <font6>Triwulan</font6>
-      <div class="col">
+      <div class="col mt-2">
         <canvas id="BarChart1">
+
+        </canvas>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <font6>Tahunan</font6>
+      <div class="col mt-2">
+        <canvas id="BarChart2">
 
         </canvas>
       </div>
@@ -1554,11 +1562,43 @@ function createDoughnutChart2() //2nd Chart
       }
     },
   };
-  const chartdonat = new Chart(
+  const chartBar = new Chart(
     document.getElementById("BarChart1"), configBar
   );
 }
   document.addEventListener("DOMContentLoaded", createBarChart1);
+
+
+  function createBarChart2() //Bar Chart 2
+{
+  let datachart = {
+    labels: ['2021', '2022', '2023'],
+    datasets: [{
+      label: ['Capaian (dalam persen (%))'],
+      backgroundColor: ['rgb(255, 105, 97)', 'rgb(253, 253, 150)', 'rgb(126, 179, 122)'],
+      data: [20, 30, 60],
+      hoverOffset: 4
+    }]
+  };
+
+  const configBar2 = {
+    type: 'bar',
+    data: datachart,
+    options: {
+      aspectRatio: 8.7, //mengatur ukuran bar chart
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    },
+  };
+  const chartBar = new Chart(
+    document.getElementById("BarChart2"), configBar2
+  );
+}
+  document.addEventListener("DOMContentLoaded", createBarChart2);
 
 </script>
 
