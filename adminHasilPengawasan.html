@@ -1289,9 +1289,9 @@
   </div>
 
 <!--BAR CHART-->
-  <div class="container-fluid">
+  <div class="container-fluid mt-5">
     <div class="row">
-      <font3>BARCHART</font3>
+      <font6>Triwulan</font6>
       <div class="col">
         <canvas id="BarChart1">
 
@@ -1532,11 +1532,11 @@ function createDoughnutChart2() //2nd Chart
   function createBarChart1() //Bar Chart 1
 {
   let datachart = {
-    labels: ['Triwulan(dalam persen (%))', 'Tahun(dalam persen (%))'],
+    labels: ['Triwulan I', 'Triwulan II', 'Triwulan III', 'Triwulan IV'],
     datasets: [{
-      label: ['Capaian'],
-      backgroundColor: ['rgb(25, 40, 65)', 'rgb(82, 138, 174)'],
-      data: [20, 100],
+      label: ['Capaian (dalam persen (%))'],
+      backgroundColor: ['rgb(255, 105, 97)', 'rgb(253, 253, 150)', 'rgb(126, 179, 122)', 'rgb(143, 184, 202)'],
+      data: [20, 30, 40, 60],
       hoverOffset: 4
     }]
   };
