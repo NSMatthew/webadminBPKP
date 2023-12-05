@@ -380,3 +380,18 @@ input::placeholder{
     background-color: #FFF;
     border-color: #141313;
   }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin-right: 20px;
+  }
+
+  .nav-links img {
+    max-width: 100%;
+    height: auto;
+  }
